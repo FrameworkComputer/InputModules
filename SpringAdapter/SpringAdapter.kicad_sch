@@ -1618,7 +1618,7 @@
     (property "Value" "MountingHole" (id 1) (at 80.01 30.4799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "MountingHole:MountingHole_2.1mm" (id 2) (at 77.47 29.21 0)
+    (property "Footprint" "MountingHole:MountingHole_2.5mm" (id 2) (at 77.47 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 77.47 29.21 0)
@@ -1710,6 +1710,23 @@
     (pin "2" (uuid e3b8fe67-8562-4516-b8e6-a91e391bd461))
   )
 
+  (symbol (lib_id "Mechanical:MountingHole") (at 77.47 34.29 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid f97e48c1-64cd-443b-afc2-48fe73a19f0d)
+    (property "Reference" "H?" (id 0) (at 80.01 33.0199 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (id 1) (at 80.01 35.5599 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_2.5mm" (id 2) (at 77.47 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 77.47 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
   (sheet_instances
     (path "/" (page "1"))
   )
@@ -1773,7 +1790,10 @@
       (reference "H2") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_5mm")
     )
     (path "/d3ab0cd1-9b88-4919-a40c-c6fccd3539ec"
-      (reference "H3") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.1mm")
+      (reference "H3") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm")
+    )
+    (path "/f97e48c1-64cd-443b-afc2-48fe73a19f0d"
+      (reference "H?") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm")
     )
     (path "/ee15ac4f-84b7-427d-93b4-b771dd2d0c48"
       (reference "J1") (unit 1) (value "USB_C_Receptacle_USB2.0") (footprint "Connector_USB:USB_C_Receptacle_GCT_USB4085")
