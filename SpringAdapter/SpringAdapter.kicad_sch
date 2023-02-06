@@ -1713,7 +1713,7 @@
   (symbol (lib_id "Mechanical:MountingHole") (at 77.47 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f97e48c1-64cd-443b-afc2-48fe73a19f0d)
-    (property "Reference" "H?" (id 0) (at 80.01 33.0199 0)
+    (property "Reference" "H4" (id 0) (at 80.01 33.0199 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (id 1) (at 80.01 35.5599 0)
@@ -1793,7 +1793,7 @@
       (reference "H3") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm")
     )
     (path "/f97e48c1-64cd-443b-afc2-48fe73a19f0d"
-      (reference "H?") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm")
+      (reference "H4") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm")
     )
     (path "/ee15ac4f-84b7-427d-93b4-b771dd2d0c48"
       (reference "J1") (unit 1) (value "USB_C_Receptacle_USB2.0") (footprint "Connector_USB:USB_C_Receptacle_GCT_USB4085")
