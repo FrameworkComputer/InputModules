@@ -3328,7 +3328,7 @@
     (property "Reference" "SW2" (id 0) (at 95.25 67.3099 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "SW_Push" (id 1) (at 95.25 69.8499 90)
+    (property "Value" "KXT3" (id 1) (at 95.25 69.8499 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Button_Switch_SMD:SW_SPST_CK_KXT3" (id 2) (at 88.9 68.58 0)
@@ -3521,7 +3521,7 @@
     (property "Reference" "SW1" (id 0) (at 22.86 67.3099 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "SW_Push" (id 1) (at 22.86 69.8499 90)
+    (property "Value" "KXT3" (id 1) (at 22.86 69.8499 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Button_Switch_SMD:SW_SPST_CK_KXT3" (id 2) (at 16.51 68.58 0)
@@ -3897,7 +3897,7 @@
     (property "Reference" "H1" (id 0) (at 19.05 158.75 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "MountingHole" (id 1) (at 19.05 161.29 0)
+    (property "Value" "24929" (id 1) (at 19.05 161.29 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "InputModule:MountingHole_3.7mm_Pad_24929" (id 2) (at 16.51 160.02 0)
@@ -4280,7 +4280,7 @@
     (property "Reference" "H2" (id 0) (at 19.05 163.83 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "MountingHole" (id 1) (at 19.05 166.37 0)
+    (property "Value" "24929" (id 1) (at 19.05 166.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "InputModule:MountingHole_3.7mm_Pad_24929" (id 2) (at 16.51 165.1 0)
@@ -4506,10 +4506,10 @@
       (reference "D6") (unit 1) (value "SK6812MINI-E") (footprint "InputModule:LED_SK6812MINI-E_PLCC4_3.5x3.5mm_P1.75mm")
     )
     (path "/aafcfa64-9217-4e7d-bd3e-24d843465741"
-      (reference "H1") (unit 1) (value "MountingHole") (footprint "InputModule:MountingHole_3.7mm_Pad_24929")
+      (reference "H1") (unit 1) (value "24929") (footprint "InputModule:MountingHole_3.7mm_Pad_24929")
     )
     (path "/edf63103-5ffc-426f-aaf2-ec1fd50a83d3"
-      (reference "H2") (unit 1) (value "MountingHole") (footprint "InputModule:MountingHole_3.7mm_Pad_24929")
+      (reference "H2") (unit 1) (value "24929") (footprint "InputModule:MountingHole_3.7mm_Pad_24929")
     )
     (path "/330bcba4-4c8c-49bd-aff7-49c6c80b3248"
       (reference "H3") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.1mm")
@@ -4548,10 +4548,10 @@
       (reference "R7") (unit 1) (value "180k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/653bfd6a-d15d-4ca5-a0ae-cf5a0ce05a01"
-      (reference "SW1") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_SPST_CK_KXT3")
+      (reference "SW1") (unit 1) (value "KXT3") (footprint "Button_Switch_SMD:SW_SPST_CK_KXT3")
     )
     (path "/3bb26f8a-015b-438a-8dbb-c27f290e4c73"
-      (reference "SW2") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_SPST_CK_KXT3")
+      (reference "SW2") (unit 1) (value "KXT3") (footprint "Button_Switch_SMD:SW_SPST_CK_KXT3")
     )
     (path "/0d59877e-9a3d-48a1-b506-0a8d956fe5fa"
       (reference "TP1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
