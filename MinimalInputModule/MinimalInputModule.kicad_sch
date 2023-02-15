@@ -3722,7 +3722,7 @@
     (property "Reference" "U1" (id 0) (at 48.26 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "W25Q32JVZP" (id 1) (at 59.1694 52.07 0)
+    (property "Value" "W25Q16JVUXIQ " (id 1) (at 59.1694 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "InputModule:SON-8-1EP_3x2mm_P0.5mm_EP0.2x1.6mm" (id 2) (at 57.15 62.23 0)
@@ -4566,7 +4566,7 @@
       (reference "TP4") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
     )
     (path "/91c48eaa-1df4-4f58-baf7-7510fe007933"
-      (reference "U1") (unit 1) (value "W25Q32JVZP") (footprint "InputModule:SON-8-1EP_3x2mm_P0.5mm_EP0.2x1.6mm")
+      (reference "U1") (unit 1) (value "W25Q16JVUXIQ ") (footprint "InputModule:SON-8-1EP_3x2mm_P0.5mm_EP0.2x1.6mm")
     )
     (path "/378699dd-e87c-4c5a-a140-15a3a1202459"
       (reference "U2") (unit 1) (value "RP2040") (footprint "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm")
