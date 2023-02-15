@@ -843,7 +843,7 @@
   (gr_text "GND" (at 109.22 122.65) (layer "F.SilkS") (tstamp 049acac7-a88c-475d-96ff-17909cc16c1c)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
-  (gr_text "V2 12/30/2022" (at 103.124 124.46 90) (layer "F.SilkS") (tstamp 75cc50da-10c7-48ff-8328-c15b3e89b94e)
+  (gr_text "V3 02/14/2023" (at 103.124 124.46 90) (layer "F.SilkS") (tstamp 75cc50da-10c7-48ff-8328-c15b3e89b94e)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "Lotus Input Adapter Board" (at 101.6 120.65 90) (layer "F.SilkS") (tstamp 871b9056-db26-484d-beb5-6e6ee29ec5ce)
