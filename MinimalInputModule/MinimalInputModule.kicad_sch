@@ -2997,7 +2997,7 @@
     (property "Value" "Conn_02x04_Odd_Even" (at 46.99 168.9099 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "InputModule:SpringPads_2x4_P1.6mm" (at 39.37 168.91 0)
+    (property "Footprint" "InputModule:PogoPads_2x4_P2.0mm" (at 39.37 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 39.37 168.91 0)
