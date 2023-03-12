@@ -420,7 +420,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "MicrocontrollerInputModule.kicad_pro",
+    "filename": "MinimalSmallInputModule.kicad_pro",
     "version": 1
   },
   "net_settings": {
