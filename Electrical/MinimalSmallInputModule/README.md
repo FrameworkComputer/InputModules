@@ -1,4 +1,6 @@
 # Minimal Small Input Module
+![image](https://user-images.githubusercontent.com/28994301/224577156-a0dc6dc6-3f1e-4953-9155-644b21a07553.png)
+
 This is a blank Small Input Module that you can start from.
 
 ## License
