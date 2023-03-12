@@ -1036,7 +1036,7 @@
   (gr_text "V4 03/07/2023" (at 103.124 124.46 90) (layer "F.SilkS") (tstamp 75cc50da-10c7-48ff-8328-c15b3e89b94e)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "Lotus Input Adapter Board" (at 101.6 120.65 90) (layer "F.SilkS") (tstamp 871b9056-db26-484d-beb5-6e6ee29ec5ce)
+  (gr_text "Input Module Adapter Board" (at 101.6 120.142 90) (layer "F.SilkS") (tstamp 871b9056-db26-484d-beb5-6e6ee29ec5ce)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "ID" (at 109.22 120.11) (layer "F.SilkS") (tstamp a762e48b-0975-4888-b848-387b22fb295c)
