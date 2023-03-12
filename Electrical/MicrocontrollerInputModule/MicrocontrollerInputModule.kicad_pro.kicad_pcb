@@ -5,6 +5,16 @@
   )
 
   (paper "A4")
+  (title_block
+    (title "Microcontroller Input Module")
+    (date "2023-03-12")
+    (rev "V2")
+    (company "Framework Computer Inc")
+    (comment 1 "https://frame.work")
+    (comment 2 "https://github.com/FrameworkComputer/InputModules")
+    (comment 3 "This work is licensed under a Creative Commons Attribution 4.0 International License")
+  )
+
   (layers
     (0 "F.Cu" signal)
     (31 "B.Cu" signal)
@@ -4091,7 +4101,7 @@
   (gr_text "MISO" (at 54.864 122.428) (layer "F.SilkS") (tstamp dcec4f88-aa1c-4637-a7b0-ba0d90b18e68)
     (effects (font (size 1 1) (thickness 0.15)) (justify right))
   )
-  (gr_text "Minimal Input Module V2\n2023 Framework CC BY 4.0" (at 56.896 66.294) (layer "F.SilkS") (tstamp e582d824-7b64-4650-8b39-e856d7a965d2)
+  (gr_text "Microcontroller Input Module V2\n2023 Framework CC BY 4.0" (at 56.896 66.294) (layer "F.SilkS") (tstamp e582d824-7b64-4650-8b39-e856d7a965d2)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
   (gr_text "SDA" (at 78.994 130.048) (layer "F.SilkS") (tstamp f4d823c4-0fc9-4f67-8085-ff0aa999408e)

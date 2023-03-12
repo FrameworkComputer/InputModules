@@ -1,7 +1,7 @@
 {
   "board": {
     "active_layer": 31,
-    "active_layer_preset": "",
+    "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -65,11 +65,11 @@
       39,
       40
     ],
-    "visible_layers": "ffeffff_ffffffff",
+    "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "MinimalInputModule.kicad_prl",
+    "filename": "MicrocontrollerInputModule.kicad_pro.kicad_prl",
     "version": 3
   },
   "project": {

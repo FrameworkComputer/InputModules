@@ -5,10 +5,13 @@
   (paper "A4")
 
   (title_block
-    (title "Minimal Input Module Reference Design")
-    (date "2023-01-02")
+    (title "Microcontroller Input Module")
+    (date "2023-03-12")
     (rev "X1")
     (company "Framework Computer Inc")
+    (comment 1 "https://frame.work")
+    (comment 2 "https://github.com/FrameworkComputer/InputModules")
+    (comment 3 "This work is licensed under a Creative Commons Attribution 4.0 International License")
   )
 
   (lib_symbols
@@ -2904,7 +2907,7 @@
     (pin "1" (uuid a6a27496-be8b-4745-8b2d-8fa57f92c020))
     (pin "2" (uuid 16ef6c60-16f5-4752-a8dd-2a40fca470f7))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "R6") (unit 1)
         )
@@ -2929,7 +2932,7 @@
     )
     (pin "1" (uuid 0a35cbeb-3258-4d72-a8a6-10c5c4b75056))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR07") (unit 1)
         )
@@ -2954,7 +2957,7 @@
     )
     (pin "1" (uuid ae749ff9-d6da-4543-a3c1-fc51850bc664))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "TP1") (unit 1)
         )
@@ -2980,7 +2983,7 @@
     (pin "1" (uuid ddb1244f-ef0e-4690-a050-71c456d09850))
     (pin "2" (uuid a7f11c1c-782a-4f7e-8a71-d2f004ebb5c1))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C1") (unit 1)
         )
@@ -3012,7 +3015,7 @@
     (pin "7" (uuid 20be6103-561d-4473-bbbd-1b61bca5415c))
     (pin "8" (uuid 1b66bdc9-dbe1-4b6a-ac1b-73b81f45bb61))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "J1") (unit 1)
         )
@@ -3037,7 +3040,7 @@
     )
     (pin "1" (uuid 5f1a709c-3898-48d3-b512-1bd10d00ae2e))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR024") (unit 1)
         )
@@ -3062,7 +3065,7 @@
     )
     (pin "1" (uuid 5c563b03-395e-449e-b0ef-8054d6a8be19))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR022") (unit 1)
         )
@@ -3087,7 +3090,7 @@
     )
     (pin "1" (uuid 2534a4d5-3970-4593-a4a1-70e174f1e985))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR017") (unit 1)
         )
@@ -3112,7 +3115,7 @@
     )
     (pin "1" (uuid 53ff9e0f-2249-41f7-bbca-799c95745c34))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR021") (unit 1)
         )
@@ -3138,7 +3141,7 @@
     (pin "1" (uuid 51090038-52be-4ec8-a328-4de61303d6d8))
     (pin "2" (uuid 971f48df-cc88-4d17-b71c-c4ea4349d320))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "R2") (unit 1)
         )
@@ -3163,7 +3166,7 @@
     )
     (pin "1" (uuid f486574e-61c0-4210-a96e-ed036a060df0))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR04") (unit 1)
         )
@@ -3189,7 +3192,7 @@
     (pin "1" (uuid e02a27ba-4ec6-4f41-9451-70196720c2a4))
     (pin "2" (uuid 24f3699d-c8f0-4a80-97cf-610f87fa9e46))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "D3") (unit 1)
         )
@@ -3214,7 +3217,7 @@
     )
     (pin "1" (uuid b3ad9125-ce0b-4b3d-b0cd-f1225b379dbd))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR08") (unit 1)
         )
@@ -3239,7 +3242,7 @@
     )
     (pin "1" (uuid b58b1ee2-76d9-40e7-a23a-a16099b4cbf9))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "TP3") (unit 1)
         )
@@ -3265,7 +3268,7 @@
     (pin "1" (uuid 6acae1c6-0e45-427a-a7ca-529715169760))
     (pin "2" (uuid b5cd1893-7fda-4b5f-83b3-2028d2235fe9))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "R4") (unit 1)
         )
@@ -3290,7 +3293,7 @@
     )
     (pin "1" (uuid 92d39a81-538e-42ce-88a0-b60ca73c5601))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR03") (unit 1)
         )
@@ -3315,7 +3318,7 @@
     )
     (pin "1" (uuid 1406aa45-8160-4c89-9676-30afd1584ace))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR015") (unit 1)
         )
@@ -3339,7 +3342,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "H3") (unit 1)
         )
@@ -3364,7 +3367,7 @@
     )
     (pin "1" (uuid f706f9e0-eb44-40f7-84b2-9982591bbd0c))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR016") (unit 1)
         )
@@ -3389,7 +3392,7 @@
     )
     (pin "1" (uuid 0bb4df11-928b-44ad-8ad9-2ed5ec5cb635))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR0102") (unit 1)
         )
@@ -3417,7 +3420,7 @@
     (pin "3" (uuid 030264ce-e12d-4fc6-8904-4f930661f0e4))
     (pin "4" (uuid d0b73222-bcaa-4b2d-84bb-e7bfabe0324d))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "D6") (unit 1)
         )
@@ -3442,7 +3445,7 @@
     )
     (pin "1" (uuid 1de59a4f-8946-45bd-b64d-3328b5bbcead))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR028") (unit 1)
         )
@@ -3523,7 +3526,7 @@
     (pin "8" (uuid c47ae150-eaca-4e08-92c5-89c566ed2299))
     (pin "9" (uuid 84879846-eb17-4bad-832b-952840186cc7))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "U2") (unit 1)
         )
@@ -3549,7 +3552,7 @@
     (pin "1" (uuid 2ac26250-642c-4955-bdd4-2fe1568a47c4))
     (pin "2" (uuid 8bb0669c-d642-4a7d-8086-9fb8212b7d65))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "SW2") (unit 1)
         )
@@ -3574,7 +3577,7 @@
     )
     (pin "1" (uuid a10fba67-22d7-4f58-8a5a-e500b9753945))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#FLG0103") (unit 1)
         )
@@ -3599,7 +3602,7 @@
     )
     (pin "1" (uuid 55903296-80b4-44d5-9271-812027748039))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR0103") (unit 1)
         )
@@ -3624,7 +3627,7 @@
     )
     (pin "1" (uuid 16151021-4afe-4df4-8787-4cf25501f0f4))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#FLG0101") (unit 1)
         )
@@ -3650,7 +3653,7 @@
     (pin "1" (uuid 6de181fe-70d6-4b00-8bbb-df1b81df5f51))
     (pin "2" (uuid c57f799b-fdd4-48c1-bfc3-0480b46c0eb9))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "R5") (unit 1)
         )
@@ -3675,7 +3678,7 @@
     )
     (pin "1" (uuid 59367e68-fc3b-4e0e-a8e1-d6fa48eeacc2))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR011") (unit 1)
         )
@@ -3700,7 +3703,7 @@
     )
     (pin "1" (uuid ef02a5d7-0e09-403d-9f7d-11ea5652d848))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR019") (unit 1)
         )
@@ -3734,7 +3737,7 @@
     (pin "8" (uuid dc862077-f83e-46d1-b146-9afbd86d00ec))
     (pin "9" (uuid 469cf6d1-1270-4905-9fc6-21456c28fefc))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "J3") (unit 1)
         )
@@ -3760,7 +3763,7 @@
     (pin "1" (uuid 0362d7eb-c53d-4287-b124-2fa67d23564b))
     (pin "2" (uuid 1ac96f48-fa27-458b-99d3-7287d9fe1f00))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C15") (unit 1)
         )
@@ -3786,7 +3789,7 @@
     (pin "1" (uuid 4020cbad-a6a5-4b74-86d8-c44a09ef0f72))
     (pin "2" (uuid 738888ec-28ef-4671-bf65-18169bef8b2a))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C11") (unit 1)
         )
@@ -3811,7 +3814,7 @@
     )
     (pin "1" (uuid 1916a66b-5f05-43a8-a645-2acf31a14858))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "TP4") (unit 1)
         )
@@ -3837,7 +3840,7 @@
     (pin "1" (uuid 2f94f7a1-247f-4903-9f57-b0792b889f45))
     (pin "2" (uuid 8601889b-47ed-4ac3-929c-2ed8e944d22c))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "SW1") (unit 1)
         )
@@ -3863,7 +3866,7 @@
     (pin "1" (uuid 8a38eb96-798c-4d71-b6c4-16367a41f22d))
     (pin "2" (uuid 00c672a2-0081-4e5e-9b48-94e9a705b920))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C9") (unit 1)
         )
@@ -3888,7 +3891,7 @@
     )
     (pin "1" (uuid 23790e16-3a8c-4008-9cb5-0cfb1950640f))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR05") (unit 1)
         )
@@ -3913,7 +3916,7 @@
     )
     (pin "1" (uuid 5f26a660-e582-4af6-82de-a72d5ecb7525))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR014") (unit 1)
         )
@@ -3938,7 +3941,7 @@
     )
     (pin "1" (uuid 3be152bf-9fda-4d14-86bb-0ba5bb2ce8cd))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR013") (unit 1)
         )
@@ -3964,7 +3967,7 @@
     (pin "1" (uuid 4bb29415-d85e-4e37-be46-834738e0bc36))
     (pin "2" (uuid 14541a7d-3b9c-4c33-a053-dc83938933c9))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "R7") (unit 1)
         )
@@ -3989,7 +3992,7 @@
     )
     (pin "1" (uuid 9e4558e7-9f5c-4f11-9b91-95b883f728b4))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR06") (unit 1)
         )
@@ -4014,7 +4017,7 @@
     )
     (pin "1" (uuid 2794c5c3-1233-47f6-b9c5-11ae67cc2c2a))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR012") (unit 1)
         )
@@ -4042,7 +4045,7 @@
     (pin "3" (uuid 90308bb6-e5b0-4eee-85c1-4681e205a9ac))
     (pin "4" (uuid 3441d7d5-5fbb-4fdc-bfbf-57c8a769c216))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "Y1") (unit 1)
         )
@@ -4068,7 +4071,7 @@
     (pin "1" (uuid b66d783a-17c2-4225-80ab-f19f7d85cd9d))
     (pin "2" (uuid d2f3b01c-0ab1-45d1-b0c2-3e17b15fea05))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C13") (unit 1)
         )
@@ -4093,7 +4096,7 @@
     )
     (pin "1" (uuid 5f7324bc-5339-486f-b45d-290c4f70f01e))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR029") (unit 1)
         )
@@ -4118,7 +4121,7 @@
     )
     (pin "1" (uuid 53d1b56e-4ce7-4abc-92e5-ef3d3a991e59))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR025") (unit 1)
         )
@@ -4151,7 +4154,7 @@
     (pin "8" (uuid c80cdd2a-3637-4ee6-bd63-099c2fe805d2))
     (pin "9" (uuid 036ccfcb-5b1f-4714-a6c0-0d097034b040))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "U1") (unit 1)
         )
@@ -4177,7 +4180,7 @@
     (pin "1" (uuid 6ae228da-ca42-4684-b43e-e82166fc8153))
     (pin "2" (uuid 4b23e10b-5259-4cee-861c-d5e0735bcab8))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "R1") (unit 1)
         )
@@ -4203,7 +4206,7 @@
     (pin "1" (uuid eb5fce07-ea0a-4fdf-9251-7b4bdbff522a))
     (pin "2" (uuid 2df530d9-17b7-4e88-96e7-ac58507f97a3))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "D4") (unit 1)
         )
@@ -4229,7 +4232,7 @@
     (pin "1" (uuid 3c2cf6ed-a61c-43b3-8ca7-4f92c0fdb6e2))
     (pin "2" (uuid 0a7cbb84-a844-444a-ab44-0154d8fddeb7))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C17") (unit 1)
         )
@@ -4255,7 +4258,7 @@
     (pin "1" (uuid fb55e29a-fb49-46f9-92ad-f6ae08f3aa7b))
     (pin "2" (uuid 42295cd8-2db9-4fb8-b3d5-4a488c242478))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C5") (unit 1)
         )
@@ -4280,7 +4283,7 @@
     )
     (pin "1" (uuid e41449aa-d468-49f2-915d-8a1d08dd713a))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "TP2") (unit 1)
         )
@@ -4305,7 +4308,7 @@
     )
     (pin "1" (uuid ed9d534b-ab65-4f42-a625-9c8466d70c66))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR09") (unit 1)
         )
@@ -4330,7 +4333,7 @@
     )
     (pin "1" (uuid cf62183a-e821-4ec3-b8b1-1bf418efdc8c))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR0101") (unit 1)
         )
@@ -4356,7 +4359,7 @@
     (pin "1" (uuid b1ebcf66-135b-4bbb-91df-7c3e5173fdd8))
     (pin "2" (uuid 9547cb60-ffa2-4ed2-a18f-d2b3c1946e6e))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C6") (unit 1)
         )
@@ -4381,7 +4384,7 @@
     )
     (pin "1" (uuid 438865c2-b17e-4120-bee5-a64c7c129f08))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR027") (unit 1)
         )
@@ -4405,7 +4408,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "H1") (unit 1)
         )
@@ -4445,7 +4448,7 @@
     (pin "8" (uuid 715308a8-3539-4891-951d-339ce2d9e26d))
     (pin "9" (uuid 1ed75d9d-920a-4bac-903f-36f0195533d1))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "J2") (unit 1)
         )
@@ -4471,7 +4474,7 @@
     (pin "1" (uuid 7943f545-055e-4790-be6a-0e9c63bb974a))
     (pin "2" (uuid 0604ee6a-a3c1-4ae1-ba03-a407effc8154))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C8") (unit 1)
         )
@@ -4497,7 +4500,7 @@
     (pin "1" (uuid 0625073d-40d0-45fd-ae57-6d9d8a9e221f))
     (pin "2" (uuid feeabaa9-40f0-421e-b200-8c3d9ce3da70))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C7") (unit 1)
         )
@@ -4523,7 +4526,7 @@
     (pin "1" (uuid 6dd3b6dd-575e-445c-b30a-7b5b4cf71016))
     (pin "2" (uuid 46126de2-c2cc-494a-bffb-dafc148e49de))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "R3") (unit 1)
         )
@@ -4548,7 +4551,7 @@
     )
     (pin "1" (uuid 56777412-850f-4b02-8e76-bc6cfd9b5354))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR023") (unit 1)
         )
@@ -4573,7 +4576,7 @@
     )
     (pin "1" (uuid 725c4570-072a-49b9-8883-5754666df394))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#FLG0102") (unit 1)
         )
@@ -4599,7 +4602,7 @@
     (pin "1" (uuid 7a9b28b5-a1fd-497a-817f-a1757972cc98))
     (pin "2" (uuid e99611ee-26a9-4fb4-83b9-3896cf391b51))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "D1") (unit 1)
         )
@@ -4625,7 +4628,7 @@
     (pin "1" (uuid b64806cd-5cbf-4442-9b5a-5f2d441ceda3))
     (pin "2" (uuid bb00e566-1bd9-45ec-9bc5-b4e960410323))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "D5") (unit 1)
         )
@@ -4650,7 +4653,7 @@
     )
     (pin "1" (uuid c1ac9890-0f1b-4059-bc44-f95d19ba502d))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR02") (unit 1)
         )
@@ -4675,7 +4678,7 @@
     )
     (pin "1" (uuid cc02bea6-8494-44b0-9d91-d942f4fae83d))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR010") (unit 1)
         )
@@ -4700,7 +4703,7 @@
     )
     (pin "1" (uuid ff6bcc92-3473-48a3-aa98-e9439ea4a7ef))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR020") (unit 1)
         )
@@ -4726,7 +4729,7 @@
     (pin "1" (uuid 799a7b85-e30d-4d13-b37a-6d28dcdc4bae))
     (pin "2" (uuid 2c969b55-2a9d-48f3-a160-3b2f9f027e2c))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C10") (unit 1)
         )
@@ -4750,7 +4753,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "H4") (unit 1)
         )
@@ -4776,7 +4779,7 @@
     (pin "1" (uuid 4795e54e-1bd0-4cbb-a9de-1845ba5f68b7))
     (pin "2" (uuid 724818ee-3383-4683-b1c2-67e5934e1c68))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C16") (unit 1)
         )
@@ -4802,7 +4805,7 @@
     (pin "1" (uuid 73194e7c-7174-48b5-9836-0f78bff46628))
     (pin "2" (uuid 38a0ae5b-492e-46dd-8736-b22badce7ebe))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C3") (unit 1)
         )
@@ -4827,7 +4830,7 @@
     )
     (pin "1" (uuid 46d96f32-e28a-4db8-ade8-40eebb22850a))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR01") (unit 1)
         )
@@ -4853,7 +4856,7 @@
     (pin "1" (uuid 01d72bde-3750-458a-b9a7-32c25847d972))
     (pin "2" (uuid 69c9d94b-34b7-4dd2-9dba-6e26d488fff7))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "D2") (unit 1)
         )
@@ -4879,7 +4882,7 @@
     (pin "1" (uuid 2a959ea2-d659-45c3-87d5-c3136382cacd))
     (pin "2" (uuid b5abe6f9-4491-4f5b-95a8-e470a954824c))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C12") (unit 1)
         )
@@ -4905,7 +4908,7 @@
     (pin "1" (uuid 67080496-9bb7-49f5-a18c-371f0ef087ad))
     (pin "2" (uuid 20d9acb4-47ce-4e85-a3d2-1cc02c58df03))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C2") (unit 1)
         )
@@ -4930,7 +4933,7 @@
     )
     (pin "1" (uuid 48e18a67-7c83-4507-9a90-0186666100c8))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR018") (unit 1)
         )
@@ -4956,7 +4959,7 @@
     (pin "1" (uuid 9950de21-9dde-48a5-bb60-02a079b3040c))
     (pin "2" (uuid 6efd2764-0d51-4ee6-afb5-aee816bf6e54))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C14") (unit 1)
         )
@@ -4980,7 +4983,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "H2") (unit 1)
         )
@@ -5006,7 +5009,7 @@
     (pin "1" (uuid ca98f4eb-dbe3-4a8c-9211-9f82bb2b573f))
     (pin "2" (uuid ed161927-6f7b-4a3b-9d31-9c08475c54e8))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "C4") (unit 1)
         )
@@ -5031,7 +5034,7 @@
     )
     (pin "1" (uuid 8563d0c3-d9a1-43b1-855d-137fef7ca693))
     (instances
-      (project "MinimalInputModule"
+      (project "MicrocontrollerInputModule.kicad_pro"
         (path "/e1225fe3-1add-4bf0-8592-1d94311392e6"
           (reference "#PWR026") (unit 1)
         )
