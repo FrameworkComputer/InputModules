@@ -1,17 +1,16 @@
 # Framework Laptop 16 Input Modules
-This repository includes mechanical and electrical documentation for the Input Module system in the Framework Laptop 16.
-
-For reference firmware for different types of modules, check out these additional repositories:
- * TODO
- 
-Input Modules are hot-swappable USB 2.0-interfaced devices that enable deep customization of the input system on the
-Framework Laptop 16.  It's also possible to use these as standalone USB 2.0 devices with a simple adapter for development
-purposes.
+This repository includes mechanical and electrical documentation for the Input Module system in the 
+Framework Laptop 16.  Input Modules are hot-swappable USB 2.0-interfaced devices that enable deep
+customization of the input system on the Framework Laptop 16.  It's also possible to use these as 
+standalone USB 2.0 devices with a simple adapter for development purposes.
 
 Input Modules come in three sizes, each of which has the same electrical interface:
  1. Keyboard-sized modules (283.16mm wide)
  2. Numpad-sized modules (67.85mm wide)
  3. Half-sized modules (33.825mm wide)
+
+For reference firmware for different types of modules, check out these additional repositories:
+ * TODO
 
 **Warning:** the documentation here is pretty early, so there may be minor adjustments in the mechanical or electrical designs
 before the Framework Laptop 16 launches.  We'll let you know when the design is locked for production.
