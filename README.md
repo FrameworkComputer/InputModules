@@ -1,4 +1,6 @@
 # Framework Laptop 16 Input Modules
+![InputModules](https://user-images.githubusercontent.com/28994301/226249081-ab193cfe-4da4-4c47-93ec-c6024edf4fbc.png)
+
 This repository includes mechanical and electrical documentation for the Input Module system in the 
 Framework Laptop 16.  Input Modules are hot-swappable USB 2.0-interfaced devices that enable deep
 customization of the input system on the Framework Laptop 16.  It's also possible to use these as 
