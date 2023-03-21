@@ -12,7 +12,8 @@ Input Modules come in three sizes, each of which has the same electrical interfa
  3. Half-sized modules (33.825mm wide)
 
 For reference firmware for different types of modules, check out these additional repositories:
- * TODO
+ * [QMK firmware](https://github.com/frameworkcomputer/qmk_firmware) for the keyboard and numpad modules
+ * [inputmodule-rs](https://github.com/FrameworkComputer/inputmodule-rs) firmware and application for other input modules
 
 **Warning:** the documentation here is pretty early, so there may be minor adjustments in the mechanical or electrical designs
 before the Framework Laptop 16 launches.  We'll let you know when the design is locked for production.
