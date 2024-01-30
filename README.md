@@ -48,6 +48,27 @@ Viewed from top:
 
 ![image](https://user-images.githubusercontent.com/28994301/223607129-ab8e1dcf-dd1f-49f1-9e67-03e9ca072348.png)
 
+### BOARD_ID values
+
+| Module Type           | ID | Pulldown Resistor (on module) |
+|-----------------------|----|-------------------------------|
+| Short                 | 0  | NA                            |
+| Reserved              | 1  | 10000                         |
+| Reserved              | 2  | 18000                         |
+| Reserved              | 3  | 27000                         |
+| Reserved              | 4  | 39000                         |
+| Reserved              | 5  | 56000                         |
+| Reserved              | 6  | 68000                         |
+| Reserved              | 7  | 82000                         |
+| Generic keyboard size | 8  | 120000                        |
+| Generic medium size   | 9  | 150000                        |
+| Generic small size    | 10 | 180000                        |
+| Medium size keypad    | 11 | 270000                        |
+| Keyboard              | 12 | 330000                        |
+| Touchpad              | 13 | 560000                        |
+| Reserved              | 14 | 820000                        |
+| Not installed         | 15 | NA                            |
+
 ### Power
 
 Each Input Module supports up to 500mA on the 5V rail and 100mA on the 3.3V rail when active.
