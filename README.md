@@ -79,3 +79,35 @@ system enters an S0ix state.  In S3/S4/S5 or when the laptop lid is closed, the 
 The Framework Laptop 16 has a protection scheme in place to prevent Input Modules from powering on unless the input deck is fully populated.
 Module detection is done using the BOARD_ID pin. It is possible to override this setting on the system, but at the risk of shorting the system
 or modules.
+
+## Touchpad Module
+
+This section describes the Touchpad Module connection on the **system** side, including the pin define and the pin map of the connector.
+
+Pins on the connector have ESD protection to meet IEC 61000-4-2 Level 4 protection.
+
+| Pin | Function | Note                                                |
+|-----|----------|-----------------------------------------------------|
+| 1   | GND      |                                                     |
+| 2   | VCC_5V   | 5V, power supply from the system.                   |
+| 3   | I2C_SCL  | I2C Serial Clock Line                               |
+| 4   | BOARD_ID | Pull to GND through BOARD_ID resistor defined below |
+| 5   | I2C_SDA  | I2C Serial Data Line                                |
+| 6   | TP_INT_1 | Secondary interrupt for touchpad future features    |
+| 7   | VCC_3V3  | 3.3V, power supply from the system.                 |
+| 8   | TP_INT_0 | Main interrupt for touchpad                         |
+
+![image](https://github.com/FrameworkComputer/InputModules/assets/28994301/720e272d-1239-40ba-8b62-a537b74ff71a)
+
+### Touchpad Module layout requirements
+
+The contacts on the Touchpad should be designed so that the ground pins engage first when the Touchpad is sliding in.
+Pin 7 should be 0.5mm longer than the other pins to ensure it engages first. 
+
+The below picture for pads is shown in perspective. The view angle is on top of the PCB.
+
+Around the signal pads there should be a ground fill keepout to prevent the pogo connectors from shorting the pads
+to ground or other signals when sliding in if the solder mask is scraped away.
+
+![image](https://github.com/FrameworkComputer/InputModules/assets/28994301/e8d65dad-9d55-4d5a-b97c-3ccbd33e1fb6)
+
