@@ -58,7 +58,7 @@ Viewed from top:
 | Reserved              | 3  | 27000                         |
 | Reserved              | 4  | 39000                         |
 | Reserved              | 5  | 56000                         |
-| Reserved              | 6  | 68000                         |
+| Generic full width    | 6  | 68000                         |
 | Reserved              | 7  | 82000                         |
 | Generic keyboard size | 8  | 120000                        |
 | Generic medium size   | 9  | 150000                        |
