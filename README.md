@@ -80,6 +80,10 @@ The Framework Laptop 16 has a protection scheme in place to prevent Input Module
 Module detection is done using the BOARD_ID pin. It is possible to override this setting on the system, but at the risk of shorting the system
 or modules.
 
+Note that although a "keyboard size" module has pads on the left and right
+hand side that it can interface with, the module detection expects the
+BOARD_ID pin to be connected on the left hand side.
+
 ## Touchpad Module
 
 This section describes the Touchpad Module connection on the **system** side, including the pin define and the pin map of the connector.
