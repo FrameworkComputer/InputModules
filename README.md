@@ -26,6 +26,8 @@ Input Modules © 2023 by Framework Computer Inc is licensed under CC BY 4.0. To 
 In the Mechanical folder, we have 2D drawings of the different Input Module sizes.  Note that there are two version of each:
  1. A version with full mechanical structure with a separate interface PCB and brackets.  This is what our production modules are based on.
  2. A simplified version that allows the PCB to be used as the mechanical structure of the module, making it much cheaper and easier to make.
+    Note that to make the PCB attach securely in the system, you'll need to solder SMT nuts like Keystone	24929 or to adhere a steel plate to attract to
+    the magnets in the system. 
 
 ## Electrical
 
