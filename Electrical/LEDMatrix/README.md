@@ -44,6 +44,8 @@ It drives a matrix of 9x34 (306) LEDs.
 | SW9      | NC          |           | Unused            |
 | CS1-CS39 | LED         | OUT       | See table below   |
 
+The ISET and ADDR wiring results in I2C Address 0x30.
+
 Below is the table describing how the LEDs are placed on the matrix
 and how they are wired up to the LED controller.
 
