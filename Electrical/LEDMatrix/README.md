@@ -1,7 +1,8 @@
 # LED Matrix Input Module
-![rp2040](https://user-images.githubusercontent.com/28994301/226248624-ad9ee6eb-9415-47b8-bf09-53a79217063c.png)
-
 This is a 34x9 LED Matrix powered by a Raspberry Pi RP2040 microcontroller.
+
+## Pre-production Unit
+![rp2040](https://user-images.githubusercontent.com/28994301/226248624-ad9ee6eb-9415-47b8-bf09-53a79217063c.png)
 
 Note that the KiCAD version of this project is incomplete and untested, and is only provided as a reference.
 
@@ -9,11 +10,11 @@ The Atemitech prototype was made and tested, but is missing
 use of the #SLEEP signal in the current revision.
 It is not the version that is shipping to customers.
 
-## MP Pinouts
+## Mass Production Unit
 
 Below are the pinouts of the mass production units.
 
-###### RP2040 MCU
+###### RP2040 MCU Pinouts
 
 | Pin    | Name     | To         | Direction | Config             |
 |--------|----------|------------|-----------|--------------------|
@@ -23,6 +24,32 @@ Below are the pinouts of the mass production units.
 | GPIO27 | I2C1_SCL | IS31FL3741 | OUT       |                    |
 | GPIO28 | INTB     | IS31FL3741 | IN        | Floating (unused)  |
 | GPIO29 | SDB      | IS31FL3741 | OUT       | High active        |
+
+###### Test Pads
+
+![Annotated picture with test pads](./test-pads.png)
+
+| Pad  | Name     | Function   |
+|------|----------|------------|
+| TP1  | VCC_3V3  |            |
+| TP2  | SWDIO    | SWD Debug  |
+| TP3  | SWCLK    | SWD Debug  |
+| TP4  | GND      | SWD Debug  |
+| TP5  | GPIO4    |            |
+| TP6  | GPIO5    |            |
+| TP7  | VCC_5V   |            |
+| TP8  | USB DP   | USB 2.0    |
+| TP9  | USB DM   | USB 2.0    |
+| TP10 | RESET    |            |
+| TP11 | SW9      |            |
+| DIP1 | GPIO25   |            |
+| DIP2 | BOOTSEL  |            |
+
+TP2-4 are used for SWD debugging and can be used with [picoprobe](https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.html) or similar.
+
+RESET and BOOTSEL are also useful. If RESET is shorted to GND it resets the RP2040.
+If BOOTSEL is shorted to GND while the RP2040 comes out of reset, it boots into UF2 bootlaoder for firmware update.
+
 
 ###### IS31FL3741 LED Controller
 
