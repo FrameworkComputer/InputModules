@@ -113,3 +113,13 @@ to ground or other signals when sliding in if the solder mask is scraped away.
 
 ![image](https://github.com/FrameworkComputer/InputModules/assets/28994301/e8d65dad-9d55-4d5a-b97c-3ccbd33e1fb6)
 
+### Touchpad I2C Protocol
+
+The I2C bus from the touchpad is connected to the CPU for HID over I2C and
+implements the [Precision Touchpad Protocol](https://learn.microsoft.com/en-us/windows-hardware/design/component-guidelines/touchpad-protocol-implementation).
+
+It's also connected to the EC. This is used when booting without a touchpad.
+If the Windows driver tries to connect to an I2C device but finds it does not respond, it will disable that device.
+So we make the [EC pretend](https://github.com/FrameworkComputer/EmbeddedController/commit/9d49389919c36e44e451514b8278b9eb7ee6ed1e)
+to be the touchpad and send the same HID report descriptor as the touchpad would.
+
