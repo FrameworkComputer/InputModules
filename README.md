@@ -15,9 +15,6 @@ For reference firmware for different types of modules, check out these additiona
  * [QMK firmware](https://github.com/frameworkcomputer/qmk_firmware) for the keyboard and numpad modules
  * [inputmodule-rs](https://github.com/FrameworkComputer/inputmodule-rs) firmware and application for other input modules
 
-**Warning:** the documentation here is pretty early, so there may be minor adjustments in the mechanical or electrical designs
-before the Framework Laptop 16 launches.  We'll let you know when the design is locked for production.
- 
 ## License
 Input Modules © 2023 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
 
@@ -75,16 +72,30 @@ Viewed from top:
 
 Each Input Module supports up to 500mA on the 5V rail and 100mA on the 3.3V rail when active.
 
+The Framework Laptop 16 has a protection scheme in place to prevent Input Modules from powering on unless the input deck is fully populated.
+Module detection is done using the `BOARD_ID` pin. It is possible to override this setting on the system through BIOS settings, but at the risk of shorting the system or modules.
+
+#### `SLEEP#` pin behavior
+
+| Platform              | BIOS | `SLEEP#`        |
+|-----------------------|------|-----------------|
+| AMD Ryzen 7040 Series | 3.XX | Lid and Suspend |
+| AMD Ryzen 7040 Series | 4.XX | Lid state       |
+| AMD AI 300 Series     | Any  | Lid state       |
+
+On the first generation Framework 16 with BIOS 3.XX the `SLEEP#` pin is low
+whenever the system is in S0ix (suspend) state or the lid is closed.
+
+On the 2nd gen or 1st gen with BIOS 4.XX the `SLEEP#` pin is only low if the lid is closed. 
+This change was made because the keyboard and touchpad firmware couldn't decide between
+
 When SLEEP# is low or USB is in Selective Suspend mode, modules should drop below 500uA on each rail.  This will typically occur when the
 system enters an S0ix state.  In S3/S4/S5 or when the laptop lid is closed, the power rails will typically be off.
-
-The Framework Laptop 16 has a protection scheme in place to prevent Input Modules from powering on unless the input deck is fully populated.
-Module detection is done using the BOARD_ID pin. It is possible to override this setting on the system, but at the risk of shorting the system
-or modules.
 
 ## Touchpad Module
 
 This section describes the Touchpad Module connection on the **system** side, including the pin define and the pin map of the connector.
+There are three connectors for the touchpad, to allow moving it around. They are all shorted together on the same I2C bus with the same interrupt lines.
 
 Pins on the connector have ESD protection to meet IEC 61000-4-2 Level 4 protection.
 
