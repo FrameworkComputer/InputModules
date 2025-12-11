@@ -11,15 +11,35 @@ Input Modules come in three sizes, each of which has the same electrical interfa
  2. Numpad-sized modules (67.85mm wide)
  3. Half-sized modules (33.825mm wide)
 
-For reference firmware for different types of modules, check out these additional repositories:
- * [QMK firmware](https://github.com/frameworkcomputer/qmk_firmware) for the keyboard and numpad modules
- * [inputmodule-rs](https://github.com/FrameworkComputer/inputmodule-rs) firmware and application for other input modules
-
 **Warning:** the documentation here is pretty early, so there may be minor adjustments in the mechanical or electrical designs
 before the Framework Laptop 16 launches.  We'll let you know when the design is locked for production.
  
 ## License
 Input Modules © 2023 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+
+## Firmware and Software
+
+### Keyboards
+
+All keyboards (ANSI, ISO, Numpad, Macropad) run QMK firmware.
+Find the latest binary releases and source code in our [FrameworkComputer/qmk_firmware](https://github.com/FrameworkComputer/qmk_firmware/releases) repository.
+
+To configure keybindings, use our hosted VIA fork, which has the right configurations built in at https://keyboard.frame.work.
+Or the [qmk_hid](https://github.com/FrameworkComputer/qmk_hid) native Python or Rust software GUI and console applications.
+
+### LED Matrix
+
+Official firmware that ships with the modules is available in source and binary at [FrameworkComputer/inputmodule-rs](https://github.com/FrameworkComputer/inputmodule-rs).
+That same repository also contains a Rust commandline utility and Python scripts to control the matrix.
+
+Third party applications that interact with the official firmware:
+
+- [https://github.com/jpadgett314/led-matrix-vocab](jpadgett314/led-matrix-vocab) - A japanese vocab trainer
+
+Third party firmware projects that run on the official hardware:
+
+- [https://github.com/sigroot/FW_LED_Matrix_Firmware](sigroot/FW_LED_Matrix_Firmware) - Arduino based firmware with an alternative host protocol
+- [https://github.com/vddCore/sparkle-fw16](vddCore/sparkle-fw16) - Pico SDK based firmware with an alternative host protocol
 
 ## Mechanical
 
