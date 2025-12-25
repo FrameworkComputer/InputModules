@@ -12,7 +12,8 @@ One Key Modules © 2025 by Framework Computer Inc is licensed under CC BY 4.0. T
 ## 🛠 Technical Specifications
 
 ### Mechanical
-![OneKeyModuleSize](/OneKeyModule/Assets/interface.png)
+<img src="/OneKeyModule/Assets/one_key_module_layout.png" alt="OneKeyModuleSize" height="400"/>
+
 * **Key Pitch/Area:** 19.20mm * 19.20mm
 * **Keycap Size:** 15.76mm * 15.76mm
 * **Key Travel:** 1.50mm +/- 0.2mm
@@ -28,7 +29,7 @@ One Key Modules © 2025 by Framework Computer Inc is licensed under CC BY 4.0. T
 * **Connectivity:** Designed for **Signal Chaining**
 
 ### Pinout and Signal Mapping
-![OneKeyModuleLayout](/OneKeyModule/Assets/layout.png)
+<img src="/OneKeyModule/Assets/one_key_module_interface.png" alt="OneKeyModulePinout" height="400"/>
 
 The module features a 10-pin interface designed for daisy chaining multiple keys into a larger keyboard matrix.
 
@@ -46,7 +47,8 @@ The module features a 10-pin interface designed for daisy chaining multiple keys
 | 10 | **GND** | Ground |
 
 ## Mounting & Assembly
-![OneKeyModuleMounting](/OneKeyModule/Assets/mounting.png)
+<img src="/OneKeyModule/Assets/one_key_module_mounting.png" alt="OneKeyModuleMounting" height="400"/>
+
 ### Direct-Solder Lattice Method
 This module is designed for a **PCB-over-module** assembly:
 
