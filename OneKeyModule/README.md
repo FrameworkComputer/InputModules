@@ -4,18 +4,21 @@
 The One Key Module is a modular building block for the Framework Laptop 16 input system. It allows developers to create custom keyboard layouts, macropads, or individual input triggers using a standardized mechanical and electrical footprint.
 This module is designed to be mounted underneath a rigid carrier PCB, with electrical and mechanical connections made via castellated pads soldered upwards into the lattice and secured using four mechanical solder lugs.
 
+**Warning:** the documentation here is pretty early, so there may be minor adjustments in the mechanical or electrical designs before the One Key Module launches.
+
 ## License
 One Key Modules © 2025 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
 
 ## 🛠 Technical Specifications
 
 ### Mechanical
-* **Key Pitch/Area:** 19.20 mm * 19.20 mm
-* **Keycap Size** | 15.76mm * 15.76mm
-* **Key Travel:** 1.50mm +/- 0.2
+![OneKeyModuleSize](/OneKeyModule/Assets/interface.png)
+* **Key Pitch/Area:** 19.20mm * 19.20mm
+* **Keycap Size:** 15.76mm * 15.76mm
+* **Key Travel:** 1.50mm +/- 0.2mm
 * **PCB Thickness:** 0.15mm
 * **Backlight:** 1x White mini-LED
-* **Max Z-Height:** 3.65 mm (including Mylar).
+* **Max Z-Height:** 3.65mm (including Mylar).
     * Note: To ensure the laptop closes correctly, the total height of the switch and PCB must not exceed 3.70mm. Please refer to Mechanical/Small/Module/c1_design_space_ref.pdf
 * **3D Reference:** `One_Key_Module_CAD.stp`
 
@@ -25,6 +28,7 @@ One Key Modules © 2025 by Framework Computer Inc is licensed under CC BY 4.0. T
 * **Connectivity:** Designed for **Signal Chaining**
 
 ### Pinout and Signal Mapping
+![OneKeyModuleLayout](/OneKeyModule/Assets/layout.png)
 
 The module features a 10-pin interface designed for daisy chaining multiple keys into a larger keyboard matrix.
 
@@ -42,11 +46,11 @@ The module features a 10-pin interface designed for daisy chaining multiple keys
 | 10 | **GND** | Ground |
 
 ## Mounting & Assembly
-
+![OneKeyModuleMounting](/OneKeyModule/Assets/mounting.png)
 ### Direct-Solder Lattice Method
 This module is designed for a **PCB-over-module** assembly:
 
 1.  **Alignment:** The module is positioned underneath a rigid carrier PCB. 
 2.  **Mechanical Retention:** Four **mechanical solder lugs** lock into the carrier board to provide structural stability.
-3.  **Soldering:** The 10 castellated signal pads and the 4 mechanical lugs are soldered "upwards." This creates a shared electrical and mechanical bond.
-4.  **Signal Chaining:** Use the `ROW Out` and `COL Out` signals to daisy-chain multiple modules across the carrier PCB to form a complete keyboard scanning matrix.`
+3.  **Soldering:** The 10 castellated signal pads and the 4 mechanical lugs(optional) are soldered "upwards." This creates a shared electrical and mechanical bond.
+4.  **Signal Chaining:** Use the `ROW Out` and `COL Out` signals to daisy-chain multiple modules across the carrier PCB to form a complete keyboard scanning matrix.
