@@ -20,7 +20,7 @@ One Key Modules © 2025 by Framework Computer Inc is licensed under CC BY 4.0. T
 * **PCB Thickness:** 0.15mm
 * **Backlight:** 1x White mini-LED
 * **Max Z-Height:** 3.65mm (including Mylar).
-    * Note: To ensure the laptop closes correctly, the total height of the switch and PCB must not exceed 3.70mm. Please refer to Mechanical/Small/Module/c1_design_space_ref.pdf
+    * Note: To ensure the laptop closes correctly, the total height of the switch and PCB must not exceed 3.70mm. Please refer to [here](/Mechanical/Small/Module/c1_design_space_ref.pdf).
 * **3D Reference:** `One_Key_Module_CAD.stp`
 
 ### Electrical
