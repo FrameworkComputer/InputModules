@@ -143,3 +143,6 @@ If the Windows driver tries to connect to an I2C device but finds it does not re
 So we make the [EC pretend](https://github.com/FrameworkComputer/EmbeddedController/commit/9d49389919c36e44e451514b8278b9eb7ee6ed1e)
 to be the touchpad and send the same HID report descriptor as the touchpad would.
 
+## One Key Module
+
+See [One Key Module](/OneKeyModule).
