@@ -4,7 +4,8 @@
 The [One Key Module](https://frame.work/products/one-key-module) is a modular building block for the Framework Laptop 16 input system. It allows developers to create custom keyboard layouts, macropads, or individual input triggers using a standardized mechanical and electrical footprint.
 This module is designed to be mounted underneath a rigid carrier PCB, with electrical and mechanical connections made via castellated pads soldered upwards into the lattice and secured using four mechanical solder lugs.
 
-**Warning:** the documentation here is pretty early, so there may be minor adjustments in the mechanical or electrical designs before the One Key Module launches.
+> [!CAUTION]
+> This documentation is subject to change before the One Key Module launches.
 
 ## License
 One Key Modules © 2025 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
@@ -28,6 +29,8 @@ One Key Modules © 2025 by Framework Computer Inc is licensed under CC BY 4.0. T
 * **3D Reference:** `One_Key_Module_CAD.stp`
 
 ### Electrical
+> [!NOTE]
+> Schemas will be published soon.
 * **Switch Type:** Membrane Switch.
 * **Backlight:** Integrated LED support with a dedicated 5V rail and PWM-capable brightness control (`BL_LOW`).
 * **Connectivity:** Designed for **Signal Chaining**
