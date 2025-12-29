@@ -28,10 +28,21 @@ Find the latest binary releases and source code in our [FrameworkComputer/qmk_fi
 To configure keybindings, use our hosted VIA fork, which has the right configurations built in at https://keyboard.frame.work.
 Or the [qmk_hid](https://github.com/FrameworkComputer/qmk_hid) native Python or Rust software GUI and console applications.
 
+HALs for RTOS or baremetal environments:
+
+- [rust-embedded](https://github.com/rp-rs/rp-hal-boards/tree/main/boards/framework16-keyboard)
+  - [capslock Sample](https://github.com/rp-rs/rp-hal-boards/blob/main/boards/framework16-keyboard/examples/capslock.rs)
+  - [white_backlight Sample](https://github.com/rp-rs/rp-hal-boards/blob/main/boards/framework16-keyboard/examples/white_backlight.rs)
+
 ### LED Matrix
 
 Official firmware that ships with the modules is available in source and binary at [FrameworkComputer/inputmodule-rs](https://github.com/FrameworkComputer/inputmodule-rs).
 That same repository also contains a Rust commandline utility and Python scripts to control the matrix.
+
+HALs for RTOS or baremetal environments:
+
+- [rust-embedded](https://github.com/rp-rs/rp-hal-boards/tree/main/boards/framework-ledmatrix)
+  - [ledtest Sample](https://github.com/rp-rs/rp-hal-boards/blob/main/boards/framework-ledmatrix/examples/ledtest.rs)
 
 Third party applications that interact with the official firmware:
 
@@ -41,6 +52,19 @@ Third party firmware projects that run on the official hardware:
 
 - [https://github.com/sigroot/FW_LED_Matrix_Firmware](sigroot/FW_LED_Matrix_Firmware) - Arduino based firmware with an alternative host protocol
 - [https://github.com/vddCore/sparkle-fw16](vddCore/sparkle-fw16) - Pico SDK based firmware with an alternative host protocol
+
+### CircuitPython
+
+CircuitPython can run on all modules.
+
+Sample Code:
+
+- [github.com/FrameworkComputer/Framework_Inputmodule_CircuitPython](https://github.com/FrameworkComputer/Framework_Inputmodule_CircuitPython)
+
+Libraries:
+
+- [Keyboard RGB Controller Adafruit_CircuitPython_IS31FL3741](https://github.com/adafruit/Adafruit_CircuitPython_IS31FL3741)
+- [Keyboard RGB Controller - Framework CircuitPython_IS31FL3743](https://github.com/FrameworkComputer/CircuitPython_IS31FL3743)
 
 ## Mechanical
 
