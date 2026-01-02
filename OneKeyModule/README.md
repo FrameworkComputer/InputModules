@@ -10,7 +10,7 @@ This module is designed to be mounted underneath a rigid carrier PCB, with elect
 ## License
 One Key Modules © 2025 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
 
-## 🛠 Technical Specifications
+## Technical Specifications
 
 ### Mechanical
 <div style="display: flex; gap: 10px;">
@@ -29,8 +29,6 @@ One Key Modules © 2025 by Framework Computer Inc is licensed under CC BY 4.0. T
 * **3D Reference:** `One_Key_Module_CAD.stp`
 
 ### Electrical
-> [!NOTE]
-> Schemas will be published soon.
 * **Switch Type:** Membrane Switch.
 * **Backlight:** Integrated LED support with a dedicated 5V rail and PWM-capable brightness control (`BL_LOW`).
 * **Connectivity:** Designed for **Signal Chaining**
@@ -62,4 +60,4 @@ This module is designed for a **PCB-over-module** assembly:
 1.  **Alignment:** The module is positioned underneath a rigid carrier PCB. 
 2.  **Mechanical Retention:** Four **mechanical solder lugs** lock into the carrier board to provide structural stability.
 3.  **Soldering:** The 10 castellated signal pads and the 4 mechanical lugs(optional) are soldered "upwards." This creates a shared electrical and mechanical bond.
-4.  **Signal Chaining:** Use the `ROW Out` and `COL Out` signals to daisy-chain multiple modules across the carrier PCB to form a complete keyboard scanning matrix.
+4.  **Signal Chaining:** Use the `ROW Out` and `COL Out` signals to daisy-chain multiple modules across the carrier PCB to form a complete keyboard scanning matrix. LEDs will be parallel.
