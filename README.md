@@ -34,6 +34,12 @@ HALs for RTOS or baremetal environments:
   - [capslock Sample](https://github.com/rp-rs/rp-hal-boards/blob/main/boards/framework16-keyboard/examples/capslock.rs)
   - [white_backlight Sample](https://github.com/rp-rs/rp-hal-boards/blob/main/boards/framework16-keyboard/examples/white_backlight.rs)
 
+IS31FL3743 LED Controller Drivers:
+
+- [QMK](https://docs.qmk.fm/drivers/is31fl3743a)
+- [rust-embedded](https://docs.rs/is31fl3743a/latest/is31fl3743a/)
+- [CircuitPython](https://github.com/FrameworkComputer/CircuitPython_IS31FL3743)
+
 ### LED Matrix
 
 Official firmware that ships with the modules is available in source and binary at [FrameworkComputer/inputmodule-rs](https://github.com/FrameworkComputer/inputmodule-rs).
@@ -43,6 +49,12 @@ HALs for RTOS or baremetal environments:
 
 - [rust-embedded](https://github.com/rp-rs/rp-hal-boards/tree/main/boards/framework-ledmatrix)
   - [ledtest Sample](https://github.com/rp-rs/rp-hal-boards/blob/main/boards/framework-ledmatrix/examples/ledtest.rs)
+
+IS31FL3741 LED Controller Drivers:
+
+- [QMK](https://docs.qmk.fm/drivers/is31fl3741)
+- [rust-embedded](https://docs.rs/is31fl3741/latest/is31fl3741)
+- [CircuitPython](https://github.com/adafruit/Adafruit_CircuitPython_IS31FL3741)
 
 Third party applications that interact with the official firmware:
 
