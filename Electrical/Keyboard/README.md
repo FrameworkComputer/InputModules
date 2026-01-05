@@ -59,16 +59,6 @@ I2C Addresses:
 - RGB Keyboard: 0x20 and 0x23
 - Macropad: 0x20
 
-Below is the table describing how the LEDs are placed on the matrix
-and how they are wired up to the LED controller.
-
-- X is the X location in the matrix (from left to right)
-- Y is the Y location in the matrix (from bottom to top)
-- ID is the numerical identifier of the LED
-- I2C is the address of the controller, either 0x20 or 0x23
-- Address and Page describe the memory location in the IS31FL3743A's registers
-- SW and CS are the pins
-
 Please refer to the controller's datasheet for additional information about how to
 program it.
 
@@ -76,31 +66,31 @@ program it.
 
 Please refer to the reference code:
 
-- [LED Mapping](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/ansi/ansi.c)
+- [LED Mapping](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/ansi/ansi.c)
 
 ###### Macropad Keyboard
 
-- [LED Mapping](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/macropad/macropad.c)
+- [LED Mapping](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/macropad/macropad.c)
 
 ### Keyboard Matrix
 
 Please refer to the reference code:
 
 - ANSI
-    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/ansi/info.json)
-    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/ansi/keymaps/default/keymap.c)
+    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/ansi/ansi.h)
+    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/ansi/keymaps/default/keymap.c)
 - ISO
-    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/iso/info.json)
-    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/iso/keymaps/default/keymap.c)
+    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/iso/iso.h)
+    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/iso/keymaps/default/keymap.c)
 - JIS
-    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/jis/info.json)
-    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/jis/keymaps/default/keymap.c)
+    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/jis/jis.h)
+    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/jis/keymaps/default/keymap.c)
 - Numpad
-    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/numpad/info.json)
-    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/numpad/keymaps/default/keymap.c)
+    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/numpad/numpad.h)
+    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/numpad/keymaps/default/keymap.c)
 - Macropad
-    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/macropad/info.json)
-    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/macropad/keymaps/default/keymap.c)
+    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/macropad/macropad.h)
+    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/macropad/keymaps/default/keymap.c)
 
 ## License
-Input Modules © 2023 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+Input Modules © 2023-2026 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
