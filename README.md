@@ -16,7 +16,7 @@ For reference firmware for different types of modules, check out these additiona
  * [inputmodule-rs](https://github.com/FrameworkComputer/inputmodule-rs) firmware and application for other input modules
 
 ## License
-Input Modules © 2023 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+Input Modules © 2023-2026 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
 
 ## Firmware and Software
 
@@ -136,6 +136,11 @@ Each Input Module supports up to 500mA on the 5V rail and 100mA on the 3.3V rail
 
 The Framework Laptop 16 has a protection scheme in place to prevent Input Modules from powering on unless the input deck is fully populated.
 Module detection is done using the `BOARD_ID` pin. It is possible to override this setting on the system through BIOS settings, but at the risk of shorting the system or modules.
+
+System firmware expects that pogo connector where the module presents the board
+ID, is at the very left of the module. It uses this assumption to calculate
+size and position of modules and detect if the input deck is fully populated
+and all pogo pins are covered.
 
 #### `SLEEP#` pin behavior
 
