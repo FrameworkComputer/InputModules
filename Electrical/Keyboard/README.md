@@ -68,9 +68,60 @@ Please refer to the reference code:
 
 - [LED Mapping](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/ansi/ansi.c)
 
-###### Macropad Keyboard
+Connected pins on both ICs:
+
+- SW1-SW9
+- SW01-SW18
+
+LEDs are arrange like this (Left Address 0x20, Right Address 0x23)
+
+┌─────┬───┬───┬───┬───┬───┬───┬───┬                                ┬───┬───┬───┬────┬───┬─────┐
+│43 31│20 │ 8 │ 2 │14 │26 │37 │49 │                                │ 8 │14 │20 │2 38│32 │445 0│
+├───┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬                              ┴─┬─┴─┬─┴─┬─┴─┬──┴┬──┴─────┤
+│42 │30 │19 │ 7 │ 1 │13 │25 │36 │48 │                                │26 │25 │37 │31 │43  49  │
+├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴                              ┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬──────┤
+│41 29│18 │ 6 │ 0 │12 │24 │35 │47 │                                │ 7 │13 │19 │ 1 │36 │ 42   │
+├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴                             ┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴──────┤
+│334522│10 │ 4 │16 │28 │39 │51 │                                │ 6 │12 │18 │ 0 │24 │ 30   48 │
+├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴                              ┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─────────┤
+│32 21 9 │ 3 │15 │27 │38 │50 │                                │ 9 │15 │21 │ 3 │27 │33 45 51 52│
+├────┬───┼───┼───┼───┴───┴───┴        ┬───┼       ┼───┴───┴───┴───┴───┼───┼───┼───┴┬───┬──────┤
+│    │   │   │   │                    │   │       │                   │   │   │    │39 │      │
+│44 5│   │11 │17 │                    │ 5 │       │11 17 23 10  16  22│ 4 │28 │ 34 ├───┤ 46   │
+│    │   │   │   │                    │   │       │                   │   │   │    │40 │      │
+└────┴   ┴───┴───┴─                   ┴───┴───┴───┴───────────────────┴───┴───┴────┴───┴──────┘
+
+Most keys have one, large keys have multiple RGB LEDs.
+LED 0 is controlled by registers 0, 1, 2. LED 1 by 3, 4, 5 and so on.
+LED colors are arranged in the order: Blue, Green, Red.
+
+###### Macropad
 
 - [LED Mapping](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/macropad/macropad.c)
+
+Connected pins:
+
+- SW1-SW4
+- CS01-CS18
+
+LEDs are arranged like this:
+
+┌──┬──┬──┬──┐
+│13│12│17│16│
+├──┼──┼──┼──┤
+│ 1│ 0│ 5│ 4│
+├──┼──┼──┼──┤
+│ 7│ 6│11│10│
+├──┼──┼──┼──┤
+│19│18│23│22│
+├──┼──┼──┼──┤
+│ 8│20│21│ 9│
+├──┼──┼──┼──┤
+│ 2│14│15│ 3│
+└──┴──┴──┴──┘
+
+Each key has one RGB LED, so LED 0 is controlled by registers 0, 1, 2. LED 1 by 3, 4, 5 and so on.
+LED colors are arranged in the order: Blue, Green, Red.
 
 ### Keyboard Matrix
 
