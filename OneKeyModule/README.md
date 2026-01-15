@@ -4,7 +4,7 @@
 The [One Key Module](https://frame.work/products/one-key-module) is a modular building block for the Framework Laptop 16 input system. It allows developers to create custom keyboard layouts, macropads, or individual input triggers using a standardized mechanical and electrical footprint.
 This module is designed to be mounted underneath a rigid carrier PCB, with electrical and mechanical connections made via castellated pads soldered upwards into the lattice and secured using four mechanical solder lugs.
 
-> [!CAUTION]
+> [!WARNING]
 > This documentation is subject to change before the One Key Module launches.
 
 ## License
@@ -61,3 +61,35 @@ This module is designed for a **PCB-over-module** assembly:
 2.  **Mechanical Retention:** Four **mechanical solder lugs** lock into the carrier board to provide structural stability.
 3.  **Soldering:** The 10 castellated signal pads and the 4 mechanical lugs(optional) are soldered "upwards." This creates a shared electrical and mechanical bond.
 4.  **Signal Chaining:** Use the `ROW Out` and `COL Out` signals to daisy-chain multiple modules across the carrier PCB to form a complete keyboard scanning matrix. LEDs will be parallel.
+
+## Adding Legends / Key Markings
+
+There are several methods to add custom legends or graphics to the One Key Module (OKM) keycap.
+
+### 1. 1064 nm Laser Engraving
+<div align="center" style="display: flex; gap: 10px;">
+   <img src="/OneKeyModule/Assets/laser_okm.png" alt="LED OFF" height="300"/>
+   <img src="/OneKeyModule/Assets/led_laser_okm.png" alt="LED ON" height="300"/>
+</div>
+
+* **Equipment:** 2W 1064 nm Infrared Laser.
+* **Settings:** 1% Power, 4000 mm/s Speed (fastest speed).
+* **Process:** Run approximately 7 passes.
+* **Result:** This combination effectively ablates the black coating to expose the translucent material underneath, allowing the backlight to shine through without melting the keycap.
+
+> [!NOTE]
+> **Lighting & Diffusion:** For large engraved patterns, the LED underneath may not diffuse evenly. Additionally, **5V** input may be too bright for these legends. We recommend running the LEDs at **3V** if you plan to use laser engraved graphics.
+
+> [!CAUTION]
+> Do not use a standard diode laser (blue light). Only proceed with this method if you are experienced with laser equipment.
+
+---
+
+### 2. UV Printing
+Direct UV printing allows for durable, high-resolution, and full-color legends.
+
+### 3. Paint
+For manual customization, you can use model paints (acrylic or enamel) applied with a fine brush or stencils. We recommend applying a clear matte or satin topcoat after painting to protect the design from finger oils and abrasion.
+
+### 4. Stickers / Decals
+High-quality vinyl stickers or waterslide decals are an accessible, non-destructive way to add legends. Ensure the keycap surface is thoroughly cleaned with isopropyl alcohol before application to ensure the best adhesion.
