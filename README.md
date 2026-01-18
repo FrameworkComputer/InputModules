@@ -33,6 +33,7 @@ HALs for RTOS or baremetal environments:
 - [rust-embedded](https://github.com/rp-rs/rp-hal-boards/tree/main/boards/framework16-keyboard)
   - [capslock Sample](https://github.com/rp-rs/rp-hal-boards/blob/main/boards/framework16-keyboard/examples/capslock.rs)
   - [white_backlight Sample](https://github.com/rp-rs/rp-hal-boards/blob/main/boards/framework16-keyboard/examples/white_backlight.rs)
+- [Zephyr](https://docs.zephyrproject.org/latest/boards/framework/laptop16_keyboard/doc/index.html)
 
 IS31FL3743 LED Controller Drivers:
 
@@ -49,6 +50,7 @@ HALs for RTOS or baremetal environments:
 
 - [rust-embedded](https://github.com/rp-rs/rp-hal-boards/tree/main/boards/framework-ledmatrix)
   - [ledtest Sample](https://github.com/rp-rs/rp-hal-boards/blob/main/boards/framework-ledmatrix/examples/ledtest.rs)
+- [Zephyr](https://docs.zephyrproject.org/latest/boards/framework/framework_ledmatrix/doc/index.html)
 
 IS31FL3741 LED Controller Drivers:
 
