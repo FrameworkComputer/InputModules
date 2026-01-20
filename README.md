@@ -1,9 +1,9 @@
 # Framework Laptop 16 Input Modules
 ![InputModules](https://user-images.githubusercontent.com/28994301/226249081-ab193cfe-4da4-4c47-93ec-c6024edf4fbc.png)
 
-This repository includes mechanical and electrical documentation for the Input Module system in the 
+This repository includes mechanical and electrical documentation for the Input Module system in the
 Framework Laptop 16.  Input Modules are hot-swappable USB 2.0-interfaced devices that enable deep
-customization of the input system on the Framework Laptop 16.  It's also possible to use these as 
+customization of the input system on the Framework Laptop 16.  It's also possible to use these as
 standalone USB 2.0 devices with a simple adapter for development purposes.
 
 Input Modules come in three sizes, each of which has the same electrical interface:
@@ -11,11 +11,12 @@ Input Modules come in three sizes, each of which has the same electrical interfa
  2. Numpad-sized modules (67.85mm wide)
  3. Half-sized modules (33.825mm wide)
 
-**Warning:** the documentation here is pretty early, so there may be minor adjustments in the mechanical or electrical designs
-before the Framework Laptop 16 launches.  We'll let you know when the design is locked for production.
- 
+For reference firmware for different types of modules, check out these additional repositories:
+ * [QMK firmware](https://github.com/frameworkcomputer/qmk_firmware) for the keyboard and numpad modules
+ * [inputmodule-rs](https://github.com/FrameworkComputer/inputmodule-rs) firmware and application for other input modules
+
 ## License
-Input Modules © 2023 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+Input Modules © 2023-2026 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
 
 ## Firmware and Software
 
@@ -27,10 +28,35 @@ Find the latest binary releases and source code in our [FrameworkComputer/qmk_fi
 To configure keybindings, use our hosted VIA fork, which has the right configurations built in at https://keyboard.frame.work.
 Or the [qmk_hid](https://github.com/FrameworkComputer/qmk_hid) native Python or Rust software GUI and console applications.
 
+HALs for RTOS or baremetal environments:
+
+- [rust-embedded](https://github.com/rp-rs/rp-hal-boards/tree/main/boards/framework16-keyboard)
+  - [capslock Sample](https://github.com/rp-rs/rp-hal-boards/blob/main/boards/framework16-keyboard/examples/capslock.rs)
+  - [white_backlight Sample](https://github.com/rp-rs/rp-hal-boards/blob/main/boards/framework16-keyboard/examples/white_backlight.rs)
+- [Zephyr](https://docs.zephyrproject.org/latest/boards/framework/laptop16_keyboard/doc/index.html)
+
+IS31FL3743 LED Controller Drivers:
+
+- [QMK](https://docs.qmk.fm/drivers/is31fl3743a)
+- [rust-embedded](https://docs.rs/is31fl3743a/latest/is31fl3743a/)
+- [CircuitPython](https://github.com/FrameworkComputer/CircuitPython_IS31FL3743)
+
 ### LED Matrix
 
 Official firmware that ships with the modules is available in source and binary at [FrameworkComputer/inputmodule-rs](https://github.com/FrameworkComputer/inputmodule-rs).
 That same repository also contains a Rust commandline utility and Python scripts to control the matrix.
+
+HALs for RTOS or baremetal environments:
+
+- [rust-embedded](https://github.com/rp-rs/rp-hal-boards/tree/main/boards/framework-ledmatrix)
+  - [ledtest Sample](https://github.com/rp-rs/rp-hal-boards/blob/main/boards/framework-ledmatrix/examples/ledtest.rs)
+- [Zephyr](https://docs.zephyrproject.org/latest/boards/framework/framework_ledmatrix/doc/index.html)
+
+IS31FL3741 LED Controller Drivers:
+
+- [QMK](https://docs.qmk.fm/drivers/is31fl3741)
+- [rust-embedded](https://docs.rs/is31fl3741/latest/is31fl3741)
+- [CircuitPython](https://github.com/adafruit/Adafruit_CircuitPython_IS31FL3741)
 
 Third party applications that interact with the official firmware:
 
@@ -41,13 +67,26 @@ Third party firmware projects that run on the official hardware:
 - [https://github.com/sigroot/FW_LED_Matrix_Firmware](sigroot/FW_LED_Matrix_Firmware) - Arduino based firmware with an alternative host protocol
 - [https://github.com/vddCore/sparkle-fw16](vddCore/sparkle-fw16) - Pico SDK based firmware with an alternative host protocol
 
+### CircuitPython
+
+CircuitPython can run on all modules.
+
+Sample Code:
+
+- [github.com/FrameworkComputer/Framework_Inputmodule_CircuitPython](https://github.com/FrameworkComputer/Framework_Inputmodule_CircuitPython)
+
+Libraries:
+
+- [Keyboard RGB Controller Adafruit_CircuitPython_IS31FL3741](https://github.com/adafruit/Adafruit_CircuitPython_IS31FL3741)
+- [Keyboard RGB Controller - Framework CircuitPython_IS31FL3743](https://github.com/FrameworkComputer/CircuitPython_IS31FL3743)
+
 ## Mechanical
 
 In the Mechanical folder, we have 2D drawings of the different Input Module sizes.  Note that there are two version of each:
  1. A version with full mechanical structure with a separate interface PCB and brackets.  This is what our production modules are based on.
  2. A simplified version that allows the PCB to be used as the mechanical structure of the module, making it much cheaper and easier to make.
     Note that to make the PCB attach securely in the system, you'll need to solder SMT nuts like Keystone	24929 or to adhere a steel plate to attract to
-    the magnets in the system. 
+    the magnets in the system.
 
 ## Electrical
 
@@ -97,12 +136,30 @@ The LED matrix and plastic spacers are both C size.
 
 Each Input Module supports up to 500mA on the 5V rail and 100mA on the 3.3V rail when active.
 
+The Framework Laptop 16 has a protection scheme in place to prevent Input Modules from powering on unless the input deck is fully populated.
+Module detection is done using the `BOARD_ID` pin. It is possible to override this setting on the system through BIOS settings, but at the risk of shorting the system or modules.
+
+System firmware expects that pogo connector where the module presents the board
+ID, is at the very left of the module. It uses this assumption to calculate
+size and position of modules and detect if the input deck is fully populated
+and all pogo pins are covered.
+
+#### `SLEEP#` pin behavior
+
+| Platform              | BIOS | `SLEEP#`        |
+|-----------------------|------|-----------------|
+| AMD Ryzen 7040 Series | 3.XX | Lid and Suspend |
+| AMD Ryzen 7040 Series | 4.XX | Lid state       |
+| AMD AI 300 Series     | Any  | Lid state       |
+
+On the first generation Framework 16 with BIOS 3.XX the `SLEEP#` pin is low
+whenever the system is in S0ix (suspend) state or the lid is closed.
+
+On the 2nd gen or 1st gen with BIOS 4.XX the `SLEEP#` pin is only low if the lid is closed.
+This change was made because the keyboard and touchpad firmware couldn't decide between
+
 When SLEEP# is low or USB is in Selective Suspend mode, modules should drop below 500uA on each rail.  This will typically occur when the
 system enters an S0ix state. In S3/S4/S5 or when the laptop lid is closed, the power rails will typically be off.
-
-The Framework Laptop 16 has a protection scheme in place to prevent Input Modules from powering on unless the input deck is fully populated.
-Module detection is done using the BOARD_ID pin. It is possible to override this setting on the system, but at the risk of shorting the system
-or modules.
 
 F2 on boot > Setup Utility > Advanced > Force Power for Input Modules:
 
@@ -115,6 +172,7 @@ In the case of Force On, there is a risk of damage when the pins are exposed and
 ## Touchpad Module
 
 This section describes the Touchpad Module connection on the **system** side, including the pin define and the pin map of the connector.
+There are three connectors for the touchpad, to allow moving it around. They are all shorted together on the same I2C bus with the same interrupt lines.
 
 Pins on the connector have ESD protection to meet IEC 61000-4-2 Level 4 protection.
 
@@ -134,7 +192,7 @@ Pins on the connector have ESD protection to meet IEC 61000-4-2 Level 4 protecti
 ### Touchpad Module layout requirements
 
 The contacts on the Touchpad should be designed so that the ground pins engage first when the Touchpad is sliding in.
-Pin 7 should be 0.5mm longer than the other pins to ensure it engages first. 
+Pin 7 should be 0.5mm longer than the other pins to ensure it engages first.
 
 The below picture for pads is shown in perspective. The view angle is on top of the PCB.
 

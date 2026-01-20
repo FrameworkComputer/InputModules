@@ -59,16 +59,6 @@ I2C Addresses:
 - RGB Keyboard: 0x20 and 0x23
 - Macropad: 0x20
 
-Below is the table describing how the LEDs are placed on the matrix
-and how they are wired up to the LED controller.
-
-- X is the X location in the matrix (from left to right)
-- Y is the Y location in the matrix (from bottom to top)
-- ID is the numerical identifier of the LED
-- I2C is the address of the controller, either 0x20 or 0x23
-- Address and Page describe the memory location in the IS31FL3743A's registers
-- SW and CS are the pins
-
 Please refer to the controller's datasheet for additional information about how to
 program it.
 
@@ -76,31 +66,82 @@ program it.
 
 Please refer to the reference code:
 
-- [LED Mapping](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/ansi/ansi.c)
+- [LED Mapping](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/ansi/ansi.c)
 
-###### Macropad Keyboard
+Connected pins on both ICs:
 
-- [LED Mapping](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/macropad/macropad.c)
+- SW1-SW9
+- SW01-SW18
+
+LEDs are arrange like this (Left Address 0x20, Right Address 0x23)
+
+┌─────┬───┬───┬───┬───┬───┬───┬───┬                                ┬───┬───┬───┬────┬───┬─────┐
+│43 31│20 │ 8 │ 2 │14 │26 │37 │49 │                                │ 8 │14 │20 │2 38│32 │445 0│
+├───┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬                              ┴─┬─┴─┬─┴─┬─┴─┬──┴┬──┴─────┤
+│42 │30 │19 │ 7 │ 1 │13 │25 │36 │48 │                                │26 │25 │37 │31 │43  49  │
+├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴                              ┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬──────┤
+│41 29│18 │ 6 │ 0 │12 │24 │35 │47 │                                │ 7 │13 │19 │ 1 │36 │ 42   │
+├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴                             ┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴──────┤
+│334522│10 │ 4 │16 │28 │39 │51 │                                │ 6 │12 │18 │ 0 │24 │ 30   48 │
+├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴                              ┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─────────┤
+│32 21 9 │ 3 │15 │27 │38 │50 │                                │ 9 │15 │21 │ 3 │27 │33 45 51 52│
+├────┬───┼───┼───┼───┴───┴───┴        ┬───┼       ┼───┴───┴───┴───┴───┼───┼───┼───┴┬───┬──────┤
+│    │   │   │   │                    │   │       │                   │   │   │    │39 │      │
+│44 5│   │11 │17 │                    │ 5 │       │11 17 23 10  16  22│ 4 │28 │ 34 ├───┤ 46   │
+│    │   │   │   │                    │   │       │                   │   │   │    │40 │      │
+└────┴   ┴───┴───┴─                   ┴───┴───┴───┴───────────────────┴───┴───┴────┴───┴──────┘
+
+Most keys have one, large keys have multiple RGB LEDs.
+LED 0 is controlled by registers 0, 1, 2. LED 1 by 3, 4, 5 and so on.
+LED colors are arranged in the order: Blue, Green, Red.
+
+###### Macropad
+
+- [LED Mapping](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/macropad/macropad.c)
+
+Connected pins:
+
+- SW1-SW4
+- CS01-CS18
+
+LEDs are arranged like this:
+
+┌──┬──┬──┬──┐
+│13│12│17│16│
+├──┼──┼──┼──┤
+│ 1│ 0│ 5│ 4│
+├──┼──┼──┼──┤
+│ 7│ 6│11│10│
+├──┼──┼──┼──┤
+│19│18│23│22│
+├──┼──┼──┼──┤
+│ 8│20│21│ 9│
+├──┼──┼──┼──┤
+│ 2│14│15│ 3│
+└──┴──┴──┴──┘
+
+Each key has one RGB LED, so LED 0 is controlled by registers 0, 1, 2. LED 1 by 3, 4, 5 and so on.
+LED colors are arranged in the order: Blue, Green, Red.
 
 ### Keyboard Matrix
 
 Please refer to the reference code:
 
 - ANSI
-    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/ansi/info.json)
-    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/ansi/keymaps/default/keymap.c)
+    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/ansi/ansi.h)
+    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/ansi/keymaps/default/keymap.c)
 - ISO
-    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/iso/info.json)
-    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/iso/keymaps/default/keymap.c)
+    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/iso/iso.h)
+    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/iso/keymaps/default/keymap.c)
 - JIS
-    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/jis/info.json)
-    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/jis/keymaps/default/keymap.c)
+    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/jis/jis.h)
+    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/jis/keymaps/default/keymap.c)
 - Numpad
-    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/numpad/info.json)
-    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/numpad/keymaps/default/keymap.c)
+    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/numpad/numpad.h)
+    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/numpad/keymaps/default/keymap.c)
 - Macropad
-    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/macropad/info.json)
-    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/lotus/keyboards/framework/laptop16/macropad/keymaps/default/keymap.c)
+    - [Matrix](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/macropad/macropad.h)
+    - [Keymap](https://github.com/FrameworkComputer/qmk_firmware/blob/v0.3.1/keyboards/framework/macropad/keymaps/default/keymap.c)
 
 ## License
-Input Modules © 2023 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+Input Modules © 2023-2026 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
