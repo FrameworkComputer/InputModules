@@ -102,6 +102,14 @@ The Framework Laptop 16 has a protection scheme in place to prevent Input Module
 Module detection is done using the BOARD_ID pin. It is possible to override this setting on the system, but at the risk of shorting the system
 or modules.
 
+F2 on boot > Setup Utility > Advanced > Force Power for Input Modules:
+
+- Force Off: Power always off
+- Require Modules (default): Power on only if all modules are present
+- Force On: Power always on
+
+In the case of Force On, there is a risk of damage when the pins are exposed and come into contact with conductive material.
+
 ## Touchpad Module
 
 This section describes the Touchpad Module connection on the **system** side, including the pin define and the pin map of the connector.
