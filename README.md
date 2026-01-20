@@ -72,31 +72,33 @@ Viewed from top:
 
 ### BOARD_ID values
 
-| Module Type           | ID | Pulldown Resistor (on module) |
-|-----------------------|----|-------------------------------|
-| Short                 | 0  | NA                            |
-| Reserved              | 1  | 10000                         |
-| Reserved              | 2  | 18000                         |
-| Reserved              | 3  | 27000                         |
-| Reserved              | 4  | 39000                         |
-| Reserved              | 5  | 56000                         |
-| Generic full width    | 6  | 68000                         |
-| Reserved              | 7  | 82000                         |
-| Generic keyboard size | 8  | 120000                        |
-| Generic medium size   | 9  | 150000                        |
-| Generic small size    | 10 | 180000                        |
-| Medium size keypad    | 11 | 270000                        |
-| Keyboard              | 12 | 330000                        |
-| Touchpad              | 13 | 560000                        |
-| Reserved              | 14 | 820000                        |
-| Not installed         | 15 | NA                            |
+| Module Type              | ID | Pulldown Resistor (on module) |
+|--------------------------|----|-------------------------------|
+| Short                    | 0  | NA                            |
+| Reserved                 | 1  | 10000                         |
+| Reserved                 | 2  | 18000                         |
+| Reserved                 | 3  | 27000                         |
+| Reserved                 | 4  | 39000                         |
+| Reserved                 | 5  | 56000                         |
+| Generic Full Width       | 6  | 68000                         |
+| Reserved                 | 7  | 82000                         |
+| Generic A size           | 8  | 120000                        |
+| Generic B size           | 9  | 150000                        |
+| Generic C size           | 10 | 180000                        |
+| Numpad/Macropad (B size) | 11 | 270000                        |
+| Keyboard (A size)        | 12 | 330000                        |
+| Touchpad                 | 13 | 560000                        |
+| Reserved                 | 14 | 820000                        |
+| Not installed            | 15 | NA                            |
+
+The LED matrix and plastic spacers are both C size.
 
 ### Power
 
 Each Input Module supports up to 500mA on the 5V rail and 100mA on the 3.3V rail when active.
 
 When SLEEP# is low or USB is in Selective Suspend mode, modules should drop below 500uA on each rail.  This will typically occur when the
-system enters an S0ix state.  In S3/S4/S5 or when the laptop lid is closed, the power rails will typically be off.
+system enters an S0ix state. In S3/S4/S5 or when the laptop lid is closed, the power rails will typically be off.
 
 The Framework Laptop 16 has a protection scheme in place to prevent Input Modules from powering on unless the input deck is fully populated.
 Module detection is done using the BOARD_ID pin. It is possible to override this setting on the system, but at the risk of shorting the system
