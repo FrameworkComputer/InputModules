@@ -109,28 +109,33 @@ Viewed from top:
 
 ![image](https://user-images.githubusercontent.com/28994301/223607129-ab8e1dcf-dd1f-49f1-9e67-03e9ca072348.png)
 
-### BOARD_ID values
+### Module Type Detection
 
-| Module Type              | ID | Pulldown Resistor (on module) |
-|--------------------------|----|-------------------------------|
-| Short                    | 0  | NA                            |
-| Reserved                 | 1  | 10000                         |
-| Reserved                 | 2  | 18000                         |
-| Reserved                 | 3  | 27000                         |
-| Reserved                 | 4  | 39000                         |
-| Reserved                 | 5  | 56000                         |
-| Generic Full Width       | 6  | 68000                         |
-| Reserved                 | 7  | 82000                         |
-| Generic A size           | 8  | 120000                        |
-| Generic B size           | 9  | 150000                        |
-| Generic C size           | 10 | 180000                        |
-| Numpad/Macropad (B size) | 11 | 270000                        |
-| Keyboard (A size)        | 12 | 330000                        |
-| Touchpad                 | 13 | 560000                        |
-| Reserved                 | 14 | 820000                        |
-| Not installed            | 15 | NA                            |
+Embedded Controller firmware detects location, type and size of modules by
+measuring the value of a pull down resistor on each connector.
+This detection is only used for diagnostics and power sequencing (see below).
+USB functionality is enabled on any connector no matter the module type or presence.
 
-The LED matrix and plastic spacers are both C size.
+| ID | Row    | Module Type          | Size | Module Pulldown Resistor |
+|----|--------|----------------------|------|--------------------------|
+| 0  |        | Short                |      | NA                       |
+| 1  |        | Reserved             |      | 10000                    |
+| 2  |        | Reserved             |      | 18000                    |
+| 3  |        | Reserved             |      | 27000                    |
+| 4  |        | Reserved             |      | 39000                    |
+| 5  |        | Reserved             |      | 56000                    |
+| 6  | Top    | Generic Full Width   | Full | 68000                    |
+| 7  |        | Reserved             |      | 82000                    |
+| 8  | Top    | Generic A size       | A    | 120000                   |
+| 9  | Top    | Generic B size       | B    | 150000                   |
+| 10 | Top    | Generic C size       | C    | 180000                   |
+| 11 | Top    | Numpad/Macropad      | B    | 270000                   |
+| 12 | Top    | Keyboard             | A    | 330000                   |
+| 13 | Bottom | Touchpad             | B    | 560000                   |
+| 14 |        | Reserved             |      | 820000                   |
+| 15 | Both   | Not installed        |      | NA                       |
+
+The LED matrix and plastic spacers are both "Generic C size".
 
 ### Power
 
@@ -143,6 +148,21 @@ System firmware expects that pogo connector where the module presents the board
 ID, is at the very left of the module. It uses this assumption to calculate
 size and position of modules and detect if the input deck is fully populated
 and all pogo pins are covered.
+
+The following top-row combinations are accepted by firmware:
+
+| Conn 1 | Conn 2 | Conn 3 | Conn 4 | Conn 5 |
+|--------|--------|--------|--------|--------|
+| Full   |        |        |        |        |
+|        | Full   |        |        |        |
+|        |        | Full   |        |        |
+|        |        |        | Full   |        |
+|        |        |        |        | Full   |
+| A      |        |        | B      |        |
+| A      |        |        | C      | C      |
+| C      | A      |        |        | C      |
+| B      |        | A      |        |        |
+| C      | C      | A      |        |        |
 
 #### `SLEEP#` pin behavior
 
