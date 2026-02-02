@@ -204,8 +204,8 @@ Pins on the connector have ESD protection to meet IEC 61000-4-2 Level 4 protecti
 | 4   | BOARD_ID | Pull to GND through BOARD_ID resistor defined below |
 | 5   | I2C_SDA  | I2C Serial Data Line                                |
 | 6   | TP_INT_1 | Secondary interrupt for touchpad future features    |
-| 7   | VCC_3V3  | 3.3V, power supply from the system.                 |
-| 8   | TP_INT_0 | Main interrupt for touchpad                         |
+| 7   | TP_INT_0 | Main interrupt for touchpad                         |
+| 8   | VCC_3V3  | 3.3V, power supply from the system.                 |
 
 ![image](https://github.com/FrameworkComputer/InputModules/assets/28994301/720e272d-1239-40ba-8b62-a537b74ff71a)
 
