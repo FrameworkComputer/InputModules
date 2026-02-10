@@ -3,8 +3,11 @@
 
 This is a simple USB-C adapter to use and develop Input Modules outside
 of a Framework Laptop 16.  Note that the actual pogo pin connector is a 
-custom Framework part.  We're working through how to make these available
-to developers more broadly.
+custom Framework part.  We originally created this to enable Input Module
+development ahead of Framework Laptop 16 shipments starting.  Now that
+Framework Laptop 16 has been available for a few years, this design is
+mostly for reference for anyone who wants to build projects around Input
+Modules.
 
 ## License
 Input Modules © 2023 by Framework Computer Inc is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
